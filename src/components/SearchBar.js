@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
   onFormSubmit = (event) => {
     event.preventDefault();
 
-    // Try call a callback from parent to fetch data from API
+    this.props.onFormSubmit(this.state.term)
   }
 
   render() {
